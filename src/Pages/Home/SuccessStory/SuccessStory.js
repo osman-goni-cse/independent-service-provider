@@ -3,7 +3,7 @@ import { Card, Col } from 'react-bootstrap';
 
 const SuccessStory = ({success}) => {
   const {name, img} = success;
-  console.log(success);
+  // console.log(success);
   return (
     <div>
       <Col>

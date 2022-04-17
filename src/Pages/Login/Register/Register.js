@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { Link, useNavigate } from "react-router-dom";
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 
 import './Register.css'
@@ -14,8 +14,31 @@ const Register = () => {
     error,
   ] = useCreateUserWithEmailAndPassword(auth);
 
-  const handleRegister = () => {
+  
+  // const [updateProfile] = useUpdateProfile(auth);
 
+  const navigate = useNavigate();
+
+  let errorElement;
+
+  if(error) {
+    errorElement = <p className="text-danger">Error: {error?.message} </p>;
+    
+  }
+
+  const handleRegister = async (event) => {
+    event.preventDefault();
+
+    // const name = event.target.name.value;
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+
+    await createUserWithEmailAndPassword(email, password);
+    
+  }
+
+  if(user) {
+    navigate('/home');
   }
 
   return (
@@ -42,7 +65,9 @@ const Register = () => {
           className="form-control mb-3"
           required
         />
-
+        
+        {errorElement}
+        
         <input
           
           className="btn btn-primary w-50 mx-auto d-block mb-3"
