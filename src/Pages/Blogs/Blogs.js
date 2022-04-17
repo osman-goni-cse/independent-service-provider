@@ -3,9 +3,9 @@ import { Table } from "react-bootstrap";
 
 const Blogs = () => {
   return (
-    <div className="container">
+    <div className="container mt-3">
       <p>
-        <b>Question-1:</b>
+        <b>Question-1: &nbsp;</b>
         Difference between Authorization and Authentication
       </p>
       <p><b>Answer:</b></p>
@@ -50,24 +50,34 @@ const Blogs = () => {
       </Table>
 
       <p>
-        <b>Question-2:</b>
-        Why are you using firebase? What other options do you have to implement
-        authentication?
+        <b>Question-2: &nbsp;</b>
+        Why are you using firebase? What other options do you have to implement authentication?
+      </p>
+
+      <p>
+        <b>Answer: &nbsp;</b>
+        Firebase is a application development platform which is useful for creating iOS, Android and Web Apps.I am using Firebase because it provides built-in third party authentication providers, including Google, Microsoft, Apple, Facebook, Github and so on.Firebase is also useful for storage and hosting.We have other options except firebase authentication which are &nbsp;
+        <strong>Auth0, Passport, Okta, Amazon Cognito,..., etc.</strong>
+        These tool can helps us to user management and authentication.
+      </p>
+
+      <p>
+        <b>Question-3:</b>&nbsp;
+        What other services does firebase provide other than authentication ?
       </p>
 
       <p>
         <b>Answer:</b>
-
-      </p>
-
-      <p>
-        <b>Question-3:</b>
-        What other services does firebase provide other than authentication
-      </p>
-
-      <p>
-        <b>Answer:</b>
-        
+        &nbsp; Services provided by Firebase is given below:
+        <ul>
+          <li>Google Analytics</li>
+          <li>Real time Database</li>
+          <li>Cloud Messaging</li>
+          <li>Hosting</li>
+          <li>Storage</li>
+          <li>Notifications</li>
+          <li>Dynamic Links</li>
+        </ul>
       </p>
     </div>
   );
