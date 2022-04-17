@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../firebase.init';
 
 const Login = () => {
@@ -22,6 +23,8 @@ const Login = () => {
     error,
   ] = useSignInWithEmailAndPassword(auth);
 
+  const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+
   if(error) {
     errorElement = <p className="text-danger">Error: {error?.message} </p>;
   }
@@ -39,6 +42,17 @@ const Login = () => {
 
     signInWithEmailAndPassword(email, password);
   }
+
+  const resetPassword = async () => {
+    const email = emailRef.current.value;
+    if(email) {
+      await sendPasswordResetEmail(email);
+      toast("Email Sent");
+    }
+    else {
+      toast('Enter Email to Reset Password')
+    }
+  };
 
   return (
     <div className="container w-50">
@@ -76,7 +90,17 @@ const Login = () => {
             Register Here
           </Link>
         </p>
+        <p>
+          Forget Password ?
+          <button
+            className="btn btn-link text-primary text-decoration-none"
+            onClick={resetPassword}
+          >
+            Reset Password
+          </button>
+        </p>
       </Form>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

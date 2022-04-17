@@ -1,9 +1,11 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useCreateUserWithEmailAndPassword, useUpdateProfile } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword, useSendPasswordResetEmail } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 
 import './Register.css'
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
 
@@ -12,10 +14,7 @@ const Register = () => {
     user,
     loading,
     error,
-  ] = useCreateUserWithEmailAndPassword(auth);
-
-  
-  // const [updateProfile] = useUpdateProfile(auth);
+  ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
 
   const navigate = useNavigate();
 
@@ -39,6 +38,7 @@ const Register = () => {
 
   if(user) {
     navigate('/home');
+    toast('Please Verify Your Email')
   }
 
   return (
@@ -81,7 +81,10 @@ const Register = () => {
             Log In Here
           </Link>
         </p>
+
+        
       </form>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
