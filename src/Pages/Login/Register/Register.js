@@ -4,8 +4,8 @@ import { useCreateUserWithEmailAndPassword, useSendPasswordResetEmail } from "re
 import auth from "../../../firebase.init";
 
 import './Register.css'
-import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Register = () => {
 
@@ -80,9 +80,8 @@ const Register = () => {
             Log In Here
           </Link>
         </p>
-
-        
       </form>
+      <SocialLogin></SocialLogin>
     </div>
   );
 };

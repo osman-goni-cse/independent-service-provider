@@ -4,6 +4,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
 
@@ -99,6 +100,7 @@ const Login = () => {
           </button>
         </p>
       </Form>
+      <SocialLogin></SocialLogin>
       <ToastContainer></ToastContainer>
     </div>
   );
