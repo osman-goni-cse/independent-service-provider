@@ -6,16 +6,17 @@ import auth from '../../../firebase.init';
 import { useNavigate } from 'react-router-dom';
 
 const SocialLogin = () => {
-  const [signInWithGoogle, googleUser, googleError] = useSignInWithGoogle(auth);
+  const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
 
-  const [signInWithGithub, githubUser, githubError] = useSignInWithGithub(auth);
+  const [signInWithGithub, githubUser, githubLoading, githubError] = useSignInWithGithub(auth);
 
   const navigate = useNavigate();
   let errorElement;
 
   if (googleError || githubError) {
+    // console.log(googleError.message);
     errorElement =
-    <p className='text-danger'>Error: {googleError?.message} {githubError?.message} </p>
+    <p className='text-danger'>{googleError?.message} {githubError?.message} </p>
   
   }
 
