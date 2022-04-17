@@ -1,0 +1,23 @@
+[
+  {
+      "id": 1,
+      "name": "BODY BUILDING",
+      "price": "999",
+      "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+      "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+  },
+  {
+      "id": 2,
+      "name": "PUSH UP",
+      "price": "1999",
+      "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+      "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+  },
+  {
+      "id": 3,
+      "name": "WEIGHT LOSS",
+      "price": "4999",
+      "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+      "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+  }
+]
