@@ -95,8 +95,7 @@ const Login = () => {
           <button
             className="btn btn-link text-primary text-decoration-none"
             onClick={resetPassword}
-          >
-            Reset Password
+          >Reset Password
           </button>
         </p>
       </Form>

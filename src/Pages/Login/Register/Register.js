@@ -38,7 +38,6 @@ const Register = () => {
 
   if(user) {
     navigate('/home');
-    toast('Please Verify Your Email')
   }
 
   return (
@@ -84,7 +83,6 @@ const Register = () => {
 
         
       </form>
-      <ToastContainer></ToastContainer>
     </div>
   );
 };
