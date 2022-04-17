@@ -1,9 +1,11 @@
 import React from 'react';
+import image from '../../../images/NotFound.jpg';
+import './NotFound.css';
 
 const NotFound = () => {
   return (
-    <div>
-      <h2>Here We put 404 Page</h2>
+    <div className='imgbox'>
+      <img className='center-fit' src={image} alt="Not Found img" />
     </div>
   );
 };
