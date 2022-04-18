@@ -1,21 +1,16 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
-import expert1 from '../../../images/experts/expert-1.jpg'
-import expert2 from '../../../images/experts/expert-2.jpg'
-import expert3 from '../../../images/experts/expert-3.jpg'
-import expert4 from '../../../images/experts/expert-4.jpg'
-import expert5 from '../../../images/experts/expert-5.jpg'
-import expert6 from '../../../images/experts/expert-6.png'
+
+import success1 from '../../../images/success/success-1.jpeg'
+import success2 from '../../../images/success/success-2.jpg'
+import success3 from '../../../images/success/success-3.jpeg'
 
 import SuccessStory from '../SuccessStory/SuccessStory';
 
 const all_success = [
-  {id: 1, name: 'Abul Mia', img: expert1},
-  {id: 2, name: 'Abul Mia', img: expert2},
-  {id: 3, name: 'Abul Mia', img: expert3},
-  {id: 4, name: 'Abul Mia', img: expert4},
-  {id: 5, name: 'Abul Mia', img: expert5},
-  {id: 6, name: 'Abul Mia', img: expert6}
+  {id: 1, name: 'Ariana Larry', weight: '15 lbs', desc: 'Has more energy and strength and Signed Up for Regional Marathon' , img: success1},
+  {id: 2, name: 'Donald Jake', weight: '7 lbs',desc: 'Blood Pressure Reduces from 150 to 120 and Heart Bit is normal' , img: success2},
+  {id: 3, name: 'Johnson and Karry Page', weight: '12 lbs',desc: 'They both have sleep problem now they are happy' , img: success3},
 ]
 
 const SuccessStories = () => {
