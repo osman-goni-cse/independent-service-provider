@@ -22,7 +22,7 @@ const SuccessStories = () => {
   // console.log(all_success.length);
   return (
     <div id='success' className='container'>
-      <h2 className="text-center text-primary my-5">SUCCESS STORY</h2>
+      <h1 className="text-center fw-bold text-primary my-5">SUCCESS STORY</h1>
 
       <Row xs={1} md={2} lg={3} className="g-4">
         {

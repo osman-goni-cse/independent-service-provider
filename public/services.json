@@ -1,23 +1,23 @@
 [
   {
       "id": 1,
-      "name": "BODY BUILDING",
+      "name": "PUSH-UPS",
       "price": "999",
-      "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-      "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+      "description": "This exercise works the chest, shoulders, triceps,back and legs.Enhance Cardiovascular System.",
+      "img": "https://i.ibb.co/n3F4dXf/push-up.jpg"
   },
   {
       "id": 2,
-      "name": "PUSH UP",
+      "name": "COBRA STRETCH",
       "price": "1999",
-      "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-      "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+      "description": "This exercise stretches chest and lungs, shoulders, and abdomen.Helps relieve stress and fatigue.",
+      "img": "https://i.ibb.co/MkdTkyw/cobra-stretch.jpg"
   },
   {
       "id": 3,
-      "name": "WEIGHT LOSS",
-      "price": "4999",
-      "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-      "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+      "name": "PLANK",
+      "price": "2999",
+      "description": "It gives you healthy posture and improves body alignment and also improves Metabolism.",
+      "img": "https://i.ibb.co/6gRgrpq/plank-w.jpg"
   }
 ]
