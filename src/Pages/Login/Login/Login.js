@@ -63,7 +63,8 @@ const Login = () => {
           <Form.Control  
           ref={emailRef}
           type="email" 
-          placeholder="Enter email" />
+          placeholder="Enter email" 
+          required />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -71,6 +72,7 @@ const Login = () => {
             ref={passwordRef}
             type="password"
             placeholder="Password"
+            required
           />
         </Form.Group>
         {errorElement}
