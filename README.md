@@ -1,8 +1,23 @@
-# Getting Started with Create React App
+# Be Healthy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Demo [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Project Features
+
+* User can see Different Types of Services
+* User can see Success Story of the people who takes training
+* User can Register using Google or Github 
+* User can Reset Password if he/she forget it
+* When user Registered first time he/she receive a verification mail
+
+# Technologies Used in Be Healthy Web Project
+
+* React
+* React-Bootstrap
+* React-Toastify
+* React Router Dom
+* Firebase
+* React Firebase Hooks
 
 In the project directory, you can run:
 
