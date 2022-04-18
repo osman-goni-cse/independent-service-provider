@@ -82,13 +82,13 @@ const Login = () => {
           Log In
         </Button>
         <p>
-          New to Fit Tuber ?
+          New to Be Healthy ?
           <Link
             to="/register"
             className="text-primary text-decoration-none"
             
           >
-            Register Here
+          &nbsp; Register Here
           </Link>
         </p>
         <p>

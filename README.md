@@ -1,6 +1,6 @@
 # Be Healthy
 
-Live Demo [Be Healthy](https://react-firebase-fittuber.web.app/).
+Live Website [Be Healthy](https://react-firebase-fittuber.web.app/).
 
 # Project Features
 
