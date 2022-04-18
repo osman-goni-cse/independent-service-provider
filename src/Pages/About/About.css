@@ -1,0 +1,31 @@
+.margin-dao {
+  /* margin-left: 70px; */
+}
+
+#profile {
+  width: 50%;
+  margin-left: 200px;
+}
+
+.focus {
+  padding-left: 10px;
+  border-left: 5px solid;
+  border-image: linear-gradient(orange, tomato);
+  border-image-slice: 1;
+}
+
+.color {
+  color: orangered;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-me {
+  background-color: bisque;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: justify;
+}
