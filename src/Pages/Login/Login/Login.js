@@ -56,7 +56,7 @@ const Login = () => {
   };
 
   return (
-    <div className="container w-50">
+    <div className="container w-50"  style={{marginTop:'70px'}}>
       <h2 className="text-primary text-center mt-3">Please Log In</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">

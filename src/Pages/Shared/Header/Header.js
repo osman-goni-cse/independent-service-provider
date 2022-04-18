@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" sticky='top' bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="fixed-top">
         <Container>
           <Navbar.Brand as={Link} to="/home">Be Healthy</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -23,8 +23,8 @@ const Header = () => {
             <Nav className="me-auto">
 
               <Nav.Link as={Link} to="/home">Home</Nav.Link>
-              <Nav.Link href="#services">Services</Nav.Link>
-              <Nav.Link href="#success">Success Story</Nav.Link>
+              <Nav.Link href="home#services">Services</Nav.Link>
+              <Nav.Link href="home#success">Success Story</Nav.Link>
               <Nav.Link as={Link} to="/blogs">Blog</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
 

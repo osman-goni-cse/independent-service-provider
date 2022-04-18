@@ -3,7 +3,7 @@ import { Table } from "react-bootstrap";
 
 const Blogs = () => {
   return (
-    <div className="container mt-3">
+    <div className="container" style={{marginTop:'70px'}}>
       <p>
         <b>Question-1: &nbsp;</b>
         Difference between Authorization and Authentication

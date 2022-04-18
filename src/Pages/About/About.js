@@ -3,7 +3,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="mt-5">
+    <div className="" style={{marginTop:'70px'}}>
       <div className="margin-dao">
         <div className="focus w-25 mx-auto">
           <h1>Hello</h1>
